@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddNewCardTableViewCell" customModule="Trough_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZA-OS-nnn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusPostImage" translatesAutoresizingMaskIntoConstraints="NO" id="u17-L1-mCo">
+                                <rect key="frame" x="10" y="12" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.93333333330000001" green="0.67843137249999996" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Iau-xA-Uit"/>
+                                    <constraint firstAttribute="height" constant="20" id="RyQ-0u-gSh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-gS-610">
+                                <rect key="frame" x="45" y="13" width="255" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.67843137249999996" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tbe-gS-610" firstAttribute="leading" secondItem="u17-L1-mCo" secondAttribute="trailing" constant="15" id="81b-D5-oTf"/>
+                            <constraint firstItem="u17-L1-mCo" firstAttribute="centerY" secondItem="GZA-OS-nnn" secondAttribute="centerY" id="Jtx-9p-YpA"/>
+                            <constraint firstAttribute="trailing" secondItem="Tbe-gS-610" secondAttribute="trailing" constant="20" id="M59-Tp-erU"/>
+                            <constraint firstItem="Tbe-gS-610" firstAttribute="centerY" secondItem="GZA-OS-nnn" secondAttribute="centerY" id="YmN-gh-Mq5"/>
+                            <constraint firstItem="u17-L1-mCo" firstAttribute="leading" secondItem="GZA-OS-nnn" secondAttribute="leading" constant="10" id="cZZ-Jf-uxu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GZA-OS-nnn" secondAttribute="bottom" id="5sE-ED-Nq1"/>
+                    <constraint firstItem="GZA-OS-nnn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ESa-uy-I9y"/>
+                    <constraint firstItem="GZA-OS-nnn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d0Q-SV-gly"/>
+                    <constraint firstAttribute="trailing" secondItem="GZA-OS-nnn" secondAttribute="trailing" id="eeK-J3-CsA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="139" y="96"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plusPostImage" width="77" height="77"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

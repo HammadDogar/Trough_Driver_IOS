@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PaymentMethodTableViewCell" customModule="Trough_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Qz-ze6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmB-rJ-DVW">
+                                <rect key="frame" x="15" y="43" width="305" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="aSu-f9-XOk"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AXZ-TC-4se">
+                                <rect key="frame" x="10" y="9.5" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.67843137249999996" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="V6D-cK-4KK"/>
+                                    <constraint firstAttribute="width" constant="25" id="oH6-vC-OTi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-sq-56Z">
+                                <rect key="frame" x="50" y="13" width="250" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.67843137249999996" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueTickCircleCheckBox" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-Ws-JbP">
+                                <rect key="frame" x="298" y="16" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Mhg-bf-F6t"/>
+                                    <constraint firstAttribute="width" constant="12" id="Uxj-ac-67U"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fmB-rJ-DVW" firstAttribute="leading" secondItem="lX6-Qz-ze6" secondAttribute="leading" constant="15" id="2Hc-pG-hVO"/>
+                            <constraint firstAttribute="bottom" secondItem="fmB-rJ-DVW" secondAttribute="bottom" id="3mB-HU-T7X"/>
+                            <constraint firstItem="SYb-sq-56Z" firstAttribute="centerY" secondItem="lX6-Qz-ze6" secondAttribute="centerY" id="518-km-xyf"/>
+                            <constraint firstItem="1vx-Ws-JbP" firstAttribute="centerY" secondItem="lX6-Qz-ze6" secondAttribute="centerY" id="Rbo-cg-jW2"/>
+                            <constraint firstItem="AXZ-TC-4se" firstAttribute="centerY" secondItem="lX6-Qz-ze6" secondAttribute="centerY" id="X6c-GQ-34t"/>
+                            <constraint firstAttribute="trailing" secondItem="SYb-sq-56Z" secondAttribute="trailing" constant="20" id="i6g-M8-ngP"/>
+                            <constraint firstItem="AXZ-TC-4se" firstAttribute="leading" secondItem="lX6-Qz-ze6" secondAttribute="leading" constant="10" id="lIZ-Ee-Aza"/>
+                            <constraint firstItem="SYb-sq-56Z" firstAttribute="leading" secondItem="AXZ-TC-4se" secondAttribute="trailing" constant="15" id="qZG-sv-uDY"/>
+                            <constraint firstAttribute="trailing" secondItem="1vx-Ws-JbP" secondAttribute="trailing" constant="10" id="sPM-Iu-XTp"/>
+                            <constraint firstAttribute="trailing" secondItem="fmB-rJ-DVW" secondAttribute="trailing" id="tTC-rX-l0c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lX6-Qz-ze6" secondAttribute="bottom" id="FAh-6z-V9X"/>
+                    <constraint firstAttribute="trailing" secondItem="lX6-Qz-ze6" secondAttribute="trailing" id="UQt-ZY-nsA"/>
+                    <constraint firstItem="lX6-Qz-ze6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="h0R-B6-1au"/>
+                    <constraint firstItem="lX6-Qz-ze6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lVz-xW-YJE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardNumberLabel" destination="SYb-sq-56Z" id="Rd3-Bd-uo9"/>
+                <outlet property="cardTypeImageView" destination="AXZ-TC-4se" id="Abh-fE-4Wm"/>
+                <outlet property="selectedImageView" destination="1vx-Ws-JbP" id="7Eg-7z-iXT"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="96"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blueTickCircleCheckBox" width="19.333333969116211" height="17.333333969116211"/>
+    </resources>
+</document>

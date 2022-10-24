@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker View Controller-->
+        <scene sceneID="8aU-SM-Kbd">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tlP-Rw-sY4" customClass="DatePickerViewController" customModule="Trough_Driver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XbO-sQ-8fb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select date of birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deP-ez-m80">
+                                <rect key="frame" x="0.0" y="54" width="414" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Esr-8m-EQ7">
+                                <rect key="frame" x="0.0" y="85.5" width="414" height="728.5"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTR-Pd-ljM">
+                                <rect key="frame" x="207" y="822" width="207" height="40"/>
+                                <color key="backgroundColor" red="0.15151479840000001" green="0.74661093950000001" blue="0.93335717920000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qU7-IO-csg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneAction:" destination="tlP-Rw-sY4" eventType="touchUpInside" id="d5g-5Y-aef"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-7h-yEc">
+                                <rect key="frame" x="0.0" y="822" width="207" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="tlP-Rw-sY4" eventType="touchUpInside" id="etW-um-d6M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M6B-4Z-995"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Esr-8m-EQ7" firstAttribute="leading" secondItem="M6B-4Z-995" secondAttribute="leading" id="1yL-vH-Klg"/>
+                            <constraint firstItem="deP-ez-m80" firstAttribute="leading" secondItem="M6B-4Z-995" secondAttribute="leading" id="8Op-Ji-vDL"/>
+                            <constraint firstItem="zTR-Pd-ljM" firstAttribute="top" secondItem="Esr-8m-EQ7" secondAttribute="bottom" constant="8" id="AQz-w9-uo6"/>
+                            <constraint firstItem="deP-ez-m80" firstAttribute="top" secondItem="M6B-4Z-995" secondAttribute="top" constant="10" id="Co8-Dq-wHw"/>
+                            <constraint firstItem="M6B-4Z-995" firstAttribute="trailing" secondItem="deP-ez-m80" secondAttribute="trailing" id="Dcw-hG-FkO"/>
+                            <constraint firstItem="zTR-Pd-ljM" firstAttribute="leading" secondItem="SYb-7h-yEc" secondAttribute="trailing" id="IGM-6M-noy"/>
+                            <constraint firstItem="M6B-4Z-995" firstAttribute="trailing" secondItem="Esr-8m-EQ7" secondAttribute="trailing" id="OXr-Nv-RPR"/>
+                            <constraint firstItem="SYb-7h-yEc" firstAttribute="leading" secondItem="M6B-4Z-995" secondAttribute="leading" id="avj-s5-Pa0"/>
+                            <constraint firstItem="M6B-4Z-995" firstAttribute="bottom" secondItem="zTR-Pd-ljM" secondAttribute="bottom" id="cAL-Hy-9iW"/>
+                            <constraint firstItem="M6B-4Z-995" firstAttribute="trailing" secondItem="zTR-Pd-ljM" secondAttribute="trailing" id="g6w-h1-gBl"/>
+                            <constraint firstItem="SYb-7h-yEc" firstAttribute="height" secondItem="zTR-Pd-ljM" secondAttribute="height" id="gIc-IW-5iO"/>
+                            <constraint firstItem="Esr-8m-EQ7" firstAttribute="top" secondItem="deP-ez-m80" secondAttribute="bottom" constant="10" id="wIP-hA-NV6"/>
+                            <constraint firstItem="SYb-7h-yEc" firstAttribute="width" secondItem="zTR-Pd-ljM" secondAttribute="width" id="wrn-2K-L9B"/>
+                            <constraint firstItem="SYb-7h-yEc" firstAttribute="top" secondItem="Esr-8m-EQ7" secondAttribute="bottom" constant="8" id="x7y-Zy-GnL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Esr-8m-EQ7" id="T5m-NW-cAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQp-Ph-usu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37765" y="-10387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
